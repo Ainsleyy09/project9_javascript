@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Persegi Panjang, Nujur Sangkar, dan Segitiga</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 style="font-size: 40px;  color: rgb(69, 93, 146); font-weight: bold;">MENGHITUNG LUAS BANGUN DATAR</h1>
+    </div>
+
+    <div
+        style="display: flex; flex-wrap: wrap; gap: 10px; text-align: center; border-bottom: 2px solid black; border-top: 2px solid black; margin: 10px 0; padding: 5px 0; ">
+        <div
+            style="flex: 1; padding: 15px; background-color: rgb(58, 74, 125); border-radius: 10px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif; font-weight: bold;">
+            <a style="color: white; text-decoration: none;" href="#persegi-panjang">PERSEGI PANJANG</a>
+        </div>
+        <div
+            style="flex: 1; padding: 15px; background-color: rgb(58, 74, 125); border-radius: 10px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif; font-weight: bold;">
+            <a style="color: white; text-decoration: none;" href="#persegi">BUJUR SANGKAR/PERSEGI</a>
+        </div>
+        <div
+            style="flex: 1; padding: 15px; color: white; background-color: rgb(58, 74, 125); border-radius: 10px; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif; font-weight: bold;">
+            <a style="color: white; text-decoration: none;" href="#segitiga">SEGITIGA</a>
+        </div>
+    </div>
+
+    <!-- Luas Persegi Panjang -->
+    <section class="card" id="persegi-panjang"
+        style="width: 100%; max-width: 400px; margin: 20px auto; border: 2px solid #456; border-radius: 12px; box-shadow: 0 4px 10px rgb(58, 74, 125);">
+        <div style="text-align: center; padding: 20px;">
+            <h1
+                style="font-size: 22px; color: rgb(39, 55, 92); font-weight: bold; margin-bottom: 15px; font-weight: bold;">
+                LUAS PERSEGI PANJANG</h1>
+
+            <small style="display: block; margin-top: 8px; color: #555;">Luas = panjang × lebar</small>
+
+            <form id="persegi-panjang"
+                style="display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
+                <label for="hasil"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Hasil</label>
+                <input id="hasil" name="hasil" type="text" placeholder="hasil luas persegi panjang" readonly
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center; background: #e8f0ff; font-weight: bold;" />
+
+                <label for="rect-panjang"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Panjang
+                    (p):</label>
+                <input id="rect-panjang" name="panjang" type="text" step="any" placeholder="contoh: 10" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <label for="rect-lebar"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Lebar (l):</label>
+                <input id="rect-lebar" name="lebar" type="text" step="any" placeholder="contoh: 5" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <div style="display: flex; gap: 10px; width: 100%; margin-top: 10px;">
+                    <button type="submit"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Hitung
+                    </button>
+
+                    <button type="reset"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <hr style="border: 1px solid black;">
+    <br>
+
+    <!-- Luas Bujur Sangkar/Persegi -->
+    <section class="card" id="persegi"
+        style="width: 100%; max-width: 400px; margin: 20px auto; border: 2px solid #456; border-radius: 12px; box-shadow: 0 4px 10px rgb(58, 74, 125);">
+        <div style="text-align: center; padding: 20px;">
+            <h1
+                style="font-size: 22px; color: rgb(39, 55, 92); font-weight: bold; margin-bottom: 15px; font-weight: bold;">
+                LUAS BUJUR SANGKAR/PERSEGI</h1>
+
+            <small style="display: block; margin-top: 8px; color: #555;">Luas = sisi x sisi</small>
+
+            <form id="persegi"
+                style="display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
+                <label for="hasil"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Hasil</label>
+                <input id="hasil-sisi" name="hasil-sisi" type="text" placeholder="hasil luas bujur sangkar/persegi"
+                    readonly
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center; background: #e8f0ff; font-weight: bold;" />
+
+                <label for="rect-sisi"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Sisi (s):</label>
+                <input id="rect-sisi" name="panjang" type="text" step="any" placeholder="contoh: 10" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <label for="rect-sisip"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Sisi (s):</label>
+                <input id="rect-sisip" name="lebar" type="text" step="any" placeholder="contoh: 5" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <div style="display: flex; gap: 10px; width: 100%; margin-top: 10px;">
+                    <button type="submit"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Hitung
+                    </button>
+
+                    <button type="reset"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <hr style="border: 1px solid black;">
+    <br>
+
+    <!-- Luas Segitiga -->
+    <section class="card" id="segitiga"
+        style="width: 100%; max-width: 400px; margin: 20px auto; border: 2px solid #456; border-radius: 12px; box-shadow: 0 4px 10px rgb(58, 74, 125);">
+        <div style="text-align: center; padding: 20px;">
+            <h1
+                style="font-size: 22px; color: rgb(39, 55, 92); font-weight: bold; margin-bottom: 15px; font-weight: bold;">
+                LUAS SEGITIGA</h1>
+
+            <small style="display: block; margin-top: 8px; color: #555;">Luas = 1/2 x alas x tinggi</small>
+
+            <form id="segitiga"
+                style="display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
+                <label for="hasil"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Hasil</label>
+                <input id="hasil-sisis" name="hasil-sisis" type="text" placeholder="hasil luas segitiga" readonly
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center; background: #e8f0ff; font-weight: bold;" />
+
+                <label for="rect-alas"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Alas (a):</label>
+                <input id="rect-alas" name="panjang" type="text" step="any" placeholder="contoh: 10" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <label for="rect-tinggi"
+                    style="font-weight: 600; width: 100%; text-align: left; color: rgb(39, 55, 92);">Tinggi (t):</label>
+                <input id="rect-tinggi" name="lebar" type="text" step="any" placeholder="contoh: 5" required
+                    style="padding: 10px; border: 1px solid rgb(39, 55, 92); border-radius: 6px; width: 100%; text-align: center;" />
+
+                <div style="display: flex; gap: 10px; width: 100%; margin-top: 10px;">
+                    <button type="submit"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Hitung
+                    </button>
+
+                    <button type="reset"
+                        style="flex: 1; padding: 12px; background: rgb(69, 93, 146); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div
+        style="text-align: center; padding: 15px; background-color: rgb(58, 74, 125); margin-top: 20px; font-weight: bold; color: white; border-top: 2px solid #ccc;">
+        &copy; 2025 Siti Aisyah. All Rights Reserved.
+    </div>
+
+    <script>
+        // script untuk persegi panjang
+        // Panggil form
+        const form = document.getElementById("persegi-panjang");
+
+        // Tambahkan event listener saat form di-submit
+        form.addEventListener("submit", function (event) {
+
+            // Tambahkan preventDefault() untukmencegah form reload halaman.
+            event.preventDefault();
+
+            // Ambil nilai input panjang dari kolom dengan id: "rect-panjang"
+            const panjang = parseFloat(document.getElementById("rect-panjang").value);
+            // Ambil nilai input lebar dari kolom dengan id: "rect-lebar"
+            const lebar = parseFloat(document.getElementById("rect-lebar").value);
+
+            //Rumus untuk menghitung luas persegi panjang
+            const luas = panjang * lebar;
+
+            //Panggil hasil di kolom dengan id:"hasil"
+            document.getElementById("hasil").value = luas;
+        });
+
+        // script untuk persegi/bujur sangkar
+        // Panggil form
+        const formbk = document.getElementById("persegi");
+
+        // Tambahkan event listener saat form di-submit
+        formbk.addEventListener("submit", function (event) {
+
+            // Tambahkan preventDefault() untukmencegah form reload halaman.
+            event.preventDefault();
+
+            // Ambil nilai input sisi dari kolom dengan id: "rect-sisi"
+            const sisi = parseFloat(document.getElementById("rect-sisi").value);
+            // Ambil nilai input sisi dari kolom dengan id: "rect-sisip"
+            const sisip = parseFloat(document.getElementById("rect-sisip").value);
+
+            //Rumus untuk menghitung luas persegi
+            const luas = sisi * sisip;
+
+            //Panggil hasil di kolom dengan id:"hasil-sisi"
+            document.getElementById("hasil-sisi").value = luas;
+        });
+
+        // script untuk segitiga
+        // Panggil form
+        const forms = document.getElementById("segitiga");
+
+        // Tambahkan event listener saat form di-submit
+        forms.addEventListener("submit", function (event) {
+
+            // Tambahkan preventDefault() untukmencegah form reload halaman.
+            event.preventDefault();
+
+            // Ambil nilai input alas dari kolom dengan id: "rect-alas"
+            const alas = parseFloat(document.getElementById("rect-alas").value);
+            // Ambil nilai input tinggi dari kolom dengan id: "rect-tinggi"
+            const tinggi = parseFloat(document.getElementById("rect-tinggi").value);
+
+            //Rumus untuk menghitung luas segitiga
+            const luas = 1 / 2 * alas * tinggi;
+
+            //Panggil hasil di kolom dengan id:"hasil-sisis"
+            document.getElementById("hasil-sisis").value = luas;
+        });
+    </script>
+
+</body>
+
+</html>
